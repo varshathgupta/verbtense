@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0793b6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(18, 16, 16, 0.1);
+    position: relative; /* Cover the entire container */
+    height: 100%; /* Set initial height */
+  }
+  
+  @media (min-width: 768px) {
+    /* Apply styles for screens wider than 768px (desktop screens) */
+    .container {
+      height: 25rem; /* Adjust height for desktop users */
+    }
+  }
+  @media (max-width: 768px) {
+    /* Apply styles for screens wider than 768px (desktop screens) */
+    .container {
+      height: 25rem; /* Adjust height for desktop users */
+      margin: 8rem 2rem;
+      padding-top: 5rem;
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .input-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #f2f2ea8d;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .tenses-container {
+    margin-top: 20px;
+  }
+  
+  /* Table styles */
+  #tensesTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #tensesTable th,
+  #tensesTable td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  #tensesTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .error-message {
+    color: #ff0000; /* Red color for error messages */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
