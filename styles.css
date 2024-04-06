@@ -6,7 +6,7 @@ body {
   }
   
   .container {
-    max-width: 400px;
+   width: 75%;
     background-color: #fff;
     margin: 50px auto;
     padding: 20px;
@@ -19,7 +19,12 @@ body {
   @media (min-width: 768px) {
     /* Apply styles for screens wider than 768px (desktop screens) */
     .container {
-      height: 25rem; /* Adjust height for desktop users */
+      height: 30rem;
+      min-width: 15rem; /* Adjust height for desktop users */
+      padding-top: 6rem;
+    }
+    #tensesTable{
+      margin-left: 2rem;
     }
   }
   @media (max-width: 768px) {
@@ -28,7 +33,9 @@ body {
       height: 25rem; /* Adjust height for desktop users */
       margin: 8rem 2rem;
       padding-top: 5rem;
+      max-width: 400px;
     }
+    
   }
   
   h1 {
@@ -65,11 +72,12 @@ body {
   
   .tenses-container {
     margin-top: 20px;
+    padding: 25px;
   }
   
   /* Table styles */
   #tensesTable {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
   }
   
@@ -78,6 +86,7 @@ body {
     padding: 8px;
     border-bottom: 1px solid #ddd;
     text-align: left;
+    font-size: 16px;
   }
   
   #tensesTable th {
@@ -89,5 +98,17 @@ body {
     font-size: 14px;
     text-align: center;
     margin-top: 10px;
+  }
+  td:first-child{
+    color: red ;
+    font-weight: bold; 
+  }
+  td:nth-child(2){
+    color: blue ;
+    font-weight: bold;
+  }
+  td:nth-child(3){
+    color: green;
+    font-weight: bold;
   }
   
